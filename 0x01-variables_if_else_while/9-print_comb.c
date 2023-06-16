@@ -9,7 +9,7 @@ int main(void)
 {
 	int s;
 
-	s=48;
+	s = 48;
 	while (s < 58)
 	{
 		putchar(s);
