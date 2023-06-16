@@ -18,7 +18,7 @@ int main(void)
 			putchar((' '));
 			putchar((z / 10) + '0');
 			putchar((z % 10) + '0');
-			if ((y == 98) && (z == 99))
+			if ((y = 98) && (z = 99))
 					continue;
 			putchar(',');
 			putchar(' ');
