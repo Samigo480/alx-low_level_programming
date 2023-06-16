@@ -34,7 +34,7 @@ int main(void)
 			}
 			else if ((y < 56) && (z == 57))
 			{
-				y = 1 + ++y;
+				z = 1 + ++y;
 			}
 			else
 			{
