@@ -15,11 +15,11 @@ int main(void)
 		{
 			putchar((y / 10) + '0');
 			putchar((y % 10) + '0');
-			putchar((' '));
+			putchar(' ');
 			putchar((z / 10) + '0');
 			putchar((z % 10) + '0');
-			if ((y != 98) && (z != 99))
-					continue;
+			if ((y == 98) && (z == 99))
+				continue;
 			putchar(',');
 			putchar(' ');
 		}
