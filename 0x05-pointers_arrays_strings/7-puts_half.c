@@ -1,23 +1,26 @@
 #include "main.h"
 
 /**
- * puts2 - A function that prints one char out of 2 of a string.
- * @str: string
- * Return: no return
+ * puts_half - prints half of string
+ * @str: string to be printed
  */
-void puts2(char *str)
+void puts_half(char *str)
 {
-	int count = 0;
+	int count = 0, i;
 
 	while (count >= 0)
 	{
 		if (str[count] == '\0')
-		{
-			_putchar('\n');
 			break;
-		}
-		if (count % 2 == 0)
-			_putchar(str[count]);
 		count++;
 	}
+
+	if (count % 2 == 1)
+		i = count / 2;
+	else
+		i = (count - 1) / 2;
+
+	for (i++; i < count; i++)
+		_putchar(str[i]);
+	_putchar('\n');
 }
